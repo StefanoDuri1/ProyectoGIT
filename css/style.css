@@ -12,7 +12,9 @@ body {
 /* Barra de navegación */
 
 header{
-    background-color: rgb(252, 243, 252);
+    background: rgba(53,142,205,.40);
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .headerContainer {
@@ -25,7 +27,7 @@ header{
 
 .imgLogo img{
     width: 400px;
-    padding: 25px 30px;
+    padding: 5px 30px;
 }
 
 .main-nav {
@@ -38,18 +40,39 @@ header{
 
 .main-nav__item {
     padding: 5px 12px;
+    margin: 5px 0px;
 }
 
 .main-nav__item a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9em;
     font-weight: bold;
-    color: #000;
+    color: #fff;
+    border: outset 1px black;
+    border-radius: 50px;
+    background-color: #358ecd;
+    padding: 5px;
 }
 
 .main-nav__item a:hover {
-    color: blue;
+    color: black;
 }
 
+@media (min-width: 720px) {
+    
+    .headerContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        flex-direction: row;
+        margin: 0%;
+        padding-bottom: 0%;
+        padding-right: 20px;
+    }
+}
 
 /* nav{
     background: url(/imagenes/banner.jpg);
