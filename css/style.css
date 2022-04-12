@@ -530,6 +530,12 @@ footer {
     padding: 10px;
 }
 
+.icon {
+    display: inline-block;
+    font-size: 44px;
+    animation: float 3s ease-in-out infinite;
+}
+
 .contacto {
     text-align: center;
     max-width: 100%;
