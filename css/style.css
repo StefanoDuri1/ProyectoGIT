@@ -92,7 +92,7 @@ header{
 
 /* SECCIÓN INICIO */
 
-.contenedor {
+#contenedor {
     background: rgba(5, 7, 12, 0.40);
     margin: 15px auto;
     padding: 10px;
