@@ -104,7 +104,7 @@ header{
     background-color: #000;
 }
 
-.tituloInicio {
+#tituloInicio {
     background: rgba(23, 32, 50, 0.75);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -113,28 +113,21 @@ header{
     color: #fff;
 }
 
-.tituloInicio h1 {
+#tituloInicio h1 {
     font-weight: bold;
 }
 
-.tituloInicio p {
+#tituloInicio p {
     font-weight: bold;
 }
 
-.videoInicio {
+#videoInicio picture {
     background: rgba(5, 7, 12, 0.40);
-    margin: 15px auto;
     padding: 10px;
-    width: 50%;
-    border: 2px solid black;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
 }
 
-.videoInicio iframe {
-    margin: 30px 0;
-    max-width: 100%;
+#videoInicio iframe {
     border-radius: 10px;
 }
 
@@ -508,9 +501,8 @@ h4 {
 
 footer {
     background: rgba(5, 7, 12, 0.70);
-    margin-top: 75px;
+    margin-top: 20px;
     min-width: 100%;
-    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -543,8 +535,8 @@ footer p {
 }
 
 .icon:hover {
-    background-color: #e60073;
-    box-shadow:  0 0 20px #e60073 ;
+    background-color: #c4302b;
+    box-shadow:  0 0 20px #c4302b ;
 }
 
 .icon:hover:nth-child(2) {
@@ -558,8 +550,8 @@ footer p {
 }
 
 .icon:hover:nth-child(4) {
-    background-color: #1da1f2;
-    box-shadow:  0 0 20px #1da1f2 ;
+    background-color: #0e76a8;
+    box-shadow:  0 0 20px #0e76a8 ;
 }
 
 .icon i {
