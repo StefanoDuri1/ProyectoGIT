@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <!-- Links fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +57,7 @@
 
     <!-- Carrusel de imágenes -->
     <section id="contenedor" class="d-flex justify-content-center">
-        <div id="carouselExampleInterval" class="carousel slide  m-3" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide  m-3 p-2" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -85,7 +86,7 @@
     </section>
     <!-- Termina el carrusel -->
 
-    <section class="tituloInicio">
+    <section id="tituloInicio">
         <h1>PROGRAM CONSULTORES S.A.</h1>
         <br>
         <P>
@@ -95,9 +96,18 @@
         </P>
     </section>
 
-    <!-- video breve introductorio del producto -->
-    <section class="videoInicio">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LHJpTYpy13c" title="Explicación producto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="videoInicio" class="container mt-3">
+            <div  class="row w-100  d-flex justify-content-between">
+                <picture class="col-sm-12 col-md-4">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/Vy94fQfTtkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </picture>
+                <picture class="col-sm-12 col-md-4">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/LHJpTYpy13c" title="Explicación producto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </picture>
+                <picture class="col-sm-12 col-md-4">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/LHJpTYpy13c" title="Explicación producto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </picture>
+            </div>
     </section>
 
     <footer>
