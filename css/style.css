@@ -138,31 +138,22 @@ header{
 
 .section1 {
     background-color: #233250;
-    margin-top: 15px;
-    opacity: 85%;
     border-radius: 10px 10px 0 0;
 }
 
 .titulo-empresa {
-    color: #999;
-    display: inline-block;
-    position: relative;
-    left: 540px;
-    margin-top: 5px;
-}
-
-.hexagono-lista {
-    display: inline-block;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .hexagono-lista__img {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     border-radius: 50px;
-    position: relative;
-    left: 25px;
-    margin: 10px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -177,6 +168,11 @@ header{
     padding: 5px;
     display: inline-block;
     border-radius: 0 0 10px 10px;
+}
+
+.historia p {
+    text-align: center;
+    padding: 10px;
 }
 
 h2 {
