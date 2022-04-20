@@ -70,7 +70,7 @@ header{
     transform: scaleX(1);
 }
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
     
     .headerContainer {
         flex-direction: row;
