@@ -7,10 +7,6 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media screen and (min-width: 960px) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
         .imgLogo{
             img {
                 width: 400px;
@@ -24,6 +20,12 @@ header{
                 text-align: center;
                 padding-bottom: 25px;
                 list-style: none;
+                @media screen and (min-width: 960px) {
+                    flex-direction: row;
+                    margin: 0%;
+                    padding-bottom: 0%;
+                    padding-right: 20px;
+                }
                 .main-nav__item{
                     padding: 5px 12px;
                     margin: 5px 0px;
@@ -57,6 +59,15 @@ header{
                 }
             }
         }
+        @media screen and (min-width: 960px) {
+            flex-direction: row;
+            justify-content: space-between;
+            .main-nav{
+                flex-direction: row;
+                margin: 0%;
+                padding-bottom: 0%;
+                padding-right: 20px;
+            }
+        }
     }
-
 }
