@@ -1,0 +1,16 @@
+// carrousel
+#contenedor {
+    background: rgba(5, 7, 12, 0.40);
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    .carousel-indicators [data-bs-target] {
+        background-color: #000;
+    }
+    .carousel-inner{
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
