@@ -1,19 +1,172 @@
-/* Error: expected "{".
- *    ,
- * 47 | >>>>>>> sass
- *    |             ^
- *    '
- *   scss\index\_body.scss 47:13  @import
- *   scss\index\_index.scss 1:9   @import
- *   scss\style.scss 2:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 47 \2502  >>>>>>> sass\d\a    \2502              ^\a    \2575 \a   scss\\index\\_body.scss 47:13  @import\a   scss\\index\\_index.scss 1:9   @import\a   scss\\style.scss 2:9          root stylesheet';
+header {
+  background-color: rgba(53, 142, 205, 0.4);
+  border-radius: 0 0 10px 10px;
 }
+header .headerContainer {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .headerContainer .imgLogo img {
+  width: 400px;
+  padding: 5px 30px;
+}
+header .headerContainer .main-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+  list-style: none;
+}
+header .headerContainer .main-nav .main-nav__item {
+  padding: 5px 12px;
+  margin: 5px 0px;
+}
+header .headerContainer .main-nav .main-nav__item a {
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding: 5px;
+}
+header .headerContainer .main-nav .main-nav__item a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+header .headerContainer .main-nav .main-nav__item a:hover::after {
+  transform: scaleX(1);
+}
+@media screen and (min-width: 960px) {
+  header .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .headerContainer .main-nav {
+    flex-direction: row;
+    margin: 0%;
+    padding-bottom: 0%;
+    padding-right: 20px;
+  }
+}
+
+#contenedor {
+  background: rgba(5, 7, 12, 0.4);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+#contenedor .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+#contenedor .carousel-inner img {
+  border-radius: 10px;
+}
+
+#tituloInicio {
+  background: rgba(23, 32, 50, 0.75);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+#tituloInicio h1 {
+  font-weight: bold;
+}
+#tituloInicio p {
+  font-weight: bold;
+}
+
+#videoInicio picture {
+  background: rgba(5, 7, 12, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+}
+#videoInicio iframe {
+  border-radius: 10px;
+}
+
+footer {
+  background: rgba(5, 7, 12, 0.7);
+  margin-top: 20px;
+  min-width: 100%;
+  border-radius: 10px;
+}
+footer .logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .logoFooter img {
+  max-width: 120px;
+  padding-top: 10px;
+}
+footer .contacto {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+footer .contacto p {
+  color: #fff;
+  margin-top: 5px;
+}
+footer .redesFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .redesFooter .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+footer .redesFooter .icon:hover {
+  background-color: #c4302b;
+  box-shadow: 0 0 20px #c4302b;
+}
+footer .redesFooter .icon svg {
+  width: 80px;
+  height: 80px;
+}
+footer .redesFooter .icon svg circle {
+  stroke-dasharray: 150;
+  transition: all 0.8s ease-in-out;
+}
+footer .redesFooter .icon:hover circle {
+  stroke-dasharray: 220;
+}
+footer .redesFooter .icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */
