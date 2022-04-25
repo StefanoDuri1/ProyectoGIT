@@ -1,0 +1,42 @@
+.misionVision {
+    background-color: #233250;
+    opacity: 95%;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    .tituloMisionVision {
+        color: #999;
+        display: inline-block;
+        position: relative;
+        left: 540px;
+        margin-top: 5px;
+    }
+
+    .misionVision-lista {
+        .vision-icono {
+            font-size: 100px;
+            border: solid 1px #999;
+            border-radius: 50%;
+            background-color: #999;
+            margin-left: 10px;
+        }
+        
+        .mision-icono {
+            font-size: 100px;
+            border: solid 1px #999;
+            border-radius: 50%;
+            background-color: #999;
+            margin-left: 10px;
+        }
+
+        .misionVision-lista h4 {
+            color: #fff;
+        }
+        
+        .misionVision-lista p {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+        }
+    }
+}

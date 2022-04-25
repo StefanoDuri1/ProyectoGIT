@@ -101,6 +101,163 @@ header .headerContainer .main-nav .main-nav__item a:hover::after {
   border-radius: 10px;
 }
 
+.section1 {
+  background-color: #233250;
+  border-radius: 10px 10px 0 0;
+}
+.section1 .titulo-empresa {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+.section1 .hexagono-lista__img {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.historia {
+  background-color: #233250;
+  opacity: 85%;
+  width: 100%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 0 0 10px 10px;
+}
+.historia p {
+  text-align: center;
+  padding: 10px;
+}
+.historia .lista-historia {
+  list-style: none;
+  text-align: center;
+}
+
+.descripcion {
+  background-color: #999;
+  opacity: 85%;
+  border-radius: 10px;
+}
+.descripcion h2 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.valores-container {
+  display: flex;
+  justify-content: center;
+}
+.valores-container .valores {
+  display: flex;
+  justify-content: center;
+}
+.valores-container .valores li {
+  margin-top: 10px;
+  width: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.valores-container .valores li h4 {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+.valores-container .valores li p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.valores-container .valores li .dinamismo-icono {
+  font-size: 100px;
+  border: solid 2px #000;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: 10px;
+}
+.valores-container .valores li .calidad-icono {
+  font-size: 100px;
+  border: solid 2px #000;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: 10px;
+}
+.valores-container .valores li .innovacion-icono {
+  font-size: 100px;
+  border: solid 2px #000;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: 10px;
+}
+.valores-container .valores li .compromiso-icono {
+  font-size: 100px;
+  border: solid 2px #000;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: 10px;
+}
+.valores-container .valores li .flecha {
+  color: #fff;
+  display: block;
+  position: relative;
+  left: 70px;
+}
+@media screen and (min-width: 875px) {
+  .valores-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.misionVision {
+  background-color: #233250;
+  opacity: 95%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.misionVision .tituloMisionVision {
+  color: #999;
+  display: inline-block;
+  position: relative;
+  left: 540px;
+  margin-top: 5px;
+}
+.misionVision .misionVision-lista .vision-icono {
+  font-size: 100px;
+  border: solid 1px #999;
+  border-radius: 50%;
+  background-color: #999;
+  margin-left: 10px;
+}
+.misionVision .misionVision-lista .mision-icono {
+  font-size: 100px;
+  border: solid 1px #999;
+  border-radius: 50%;
+  background-color: #999;
+  margin-left: 10px;
+}
+.misionVision .misionVision-lista .misionVision-lista h4 {
+  color: #fff;
+}
+.misionVision .misionVision-lista .misionVision-lista p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
 footer {
   background: rgba(5, 7, 12, 0.7);
   margin-top: 20px;
