@@ -1,11 +1,68 @@
-/* Error: expected "{".
- *    ,
- * 47 | >>>>>>> sass
- *    |             ^
- *    '
- *   scss\index\_body.scss 47:13  @import
- *   scss\index\_index.scss 1:9   @import
- *   scss\style.scss 2:9          root stylesheet */
+header {
+  background-color: rgba(53, 142, 205, 0.4);
+  border-radius: 0 0 10px 10px;
+}
+header .headerContainer {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .headerContainer .imgLogo img {
+  width: 400px;
+  padding: 5px 30px;
+}
+header .headerContainer .main-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+  list-style: none;
+}
+header .headerContainer .main-nav .main-nav__item {
+  padding: 5px 12px;
+  margin: 5px 0px;
+}
+header .headerContainer .main-nav .main-nav__item a {
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding: 5px;
+}
+header .headerContainer .main-nav .main-nav__item a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+header .headerContainer .main-nav .main-nav__item a:hover::after {
+  transform: scaleX(1);
+}
+@media screen and (min-width: 960px) {
+  header .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .headerContainer .main-nav {
+    flex-direction: row;
+    margin: 0%;
+    padding-bottom: 0%;
+    padding-right: 20px;
+  }
+}
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
