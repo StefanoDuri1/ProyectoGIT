@@ -1,0 +1,88 @@
+.descripcion {
+    background-color: #999;
+    opacity: 85%;
+    border-radius: 10px;
+
+    h2 {
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+.valores-container {
+    display: flex;
+    justify-content: center;
+
+    .valores {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-top: 10px;
+            width: 200px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+            }
+
+            .dinamismo-icono {
+                font-size: 100px;
+                border: solid 2px #000;
+                border-radius: 50%;
+                padding: 20px;
+                margin-left: 10px;
+            }
+
+            .calidad-icono{
+                font-size: 100px;
+                border: solid 2px #000;
+                border-radius: 50%;
+                padding: 20px;
+                margin-left: 10px;
+            }
+
+            .innovacion-icono {
+                font-size: 100px;
+                border: solid 2px #000;
+                border-radius: 50%;
+                padding: 20px;
+                margin-left: 10px;
+            }
+
+            .compromiso-icono {
+                font-size: 100px;
+                border: solid 2px #000;
+                border-radius: 50%;
+                padding: 20px;
+                margin-left: 10px;
+            }
+
+            .flecha {
+                color: #fff;
+                display: block;
+                position: relative;
+                left: 70px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 875px) {
+            display: flex;
+            flex-wrap: wrap;
+    }
+}
