@@ -163,6 +163,7 @@ header .headerContainer .main-nav .main-nav__item a:hover::after {
 .valores-container .valores {
   display: flex;
   justify-content: center;
+  padding-left: 0;
 }
 .valores-container .valores li {
   margin-top: 10px;
@@ -213,12 +214,18 @@ header .headerContainer .main-nav .main-nav__item a:hover::after {
   color: #fff;
   display: block;
   position: relative;
-  left: 70px;
+  left: 67px;
+  top: 10px;
+  font-size: 25px;
 }
-@media screen and (min-width: 875px) {
-  .valores-container {
+@media screen and (max-width: 875px) {
+  .valores-container .valores {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+  }
+  .valores-container .valores p {
+    display: none;
   }
 }
 

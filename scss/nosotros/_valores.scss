@@ -20,6 +20,7 @@
     .valores {
         display: flex;
         justify-content: center;
+        padding-left: 0;
 
         li {
             margin-top: 10px;
@@ -76,13 +77,20 @@
                 color: #fff;
                 display: block;
                 position: relative;
-                left: 70px;
+                left: 67px;
+                top: 10px;
+                font-size: 25px;
             }
         }
-    }
 
-    @media screen and (min-width: 875px) {
+        @media screen and (max-width: 875px) {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
+            
+            p {
+                display: none;
+            }
+    }
     }
 }
